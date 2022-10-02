@@ -11,4 +11,4 @@ const incomeSchema = new Schema({
     description:{type:String}
 })
 
-const incomeModel = model(incomeCollection,incomeSchema)
+export const incomeModel = model(incomeCollection,incomeSchema)

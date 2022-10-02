@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.incomeModel = void 0;
 const mongoose_1 = require("mongoose");
 const incomeCollection = 'incomes';
 const incomeSchema = new mongoose_1.Schema({
@@ -11,4 +12,4 @@ const incomeSchema = new mongoose_1.Schema({
     shift: { type: String },
     description: { type: String }
 });
-const incomeModel = (0, mongoose_1.model)(incomeCollection, incomeSchema);
+exports.incomeModel = (0, mongoose_1.model)(incomeCollection, incomeSchema);
